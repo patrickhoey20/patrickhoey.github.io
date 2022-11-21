@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Form</title>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav>
+        <ul role="navigation" id="navbar">
+            <li><a href="index.html" tabindex="1">Home</a></li>
+            <li><a href="bio.html" tabindex="2">Biography</a></li>
+            <li><a href="education.html" tabindex="3">Education</a></li>
+            <li><a href="experience.html" tabindex="4">Experience</a></li>
+            <li><a href="projects.html" tabindex="5">Projects</a></li>
+            <li><a href="index.html#links" tabindex="6">Links and Attachments</a></li> <!--Send you (via smooth scroll) to bottom of the page-->
+        </ul>
+    </nav>
+    <div id="content">
+        <h1 class="section-heading" tabindex="7">Contact me!</h1>
+            <form action="https://formsubmit.co/patrickhoey2024@u.northwestern.edu" method="POST">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" id="name" name="name" class="form-field" placeholder="Enter your name" required>
+                <br>
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" name="email" class="form-field" placeholder="Enter your email" required> <!--Validates email (must include @) using type="email"-->
+                <br>
+                <br>
+                <label for="phone-num">Phone Number (format: 123-456-7890)</label>
+                <br>
+                <!--Source for phone number validation: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel-->
+                <input type="tel" id="phone-num" name="phone-num" class="form-field" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!--Validates phone number using pattern-->
+                <br>
+                <br>
+                <!--Source for yes/no radio fieldset: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio-->
+                <fieldset class="fieldset">
+                    <legend for="northwestern">Are you affiliated with Northwestern University?</legend>
+                    <div>
+                      <input type="radio" name="northwestern" required>
+                      <label for="northwestern">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="northwestern">
+                        <label for="northwestern">No</label>
+                      </div>
+                </fieldset>
+                <br>
+                <label for="message">Message</label>
+                <br>
+                <textarea type="text" id="message" name="message" class="text-area" placeholder="Write your message here" rows="4"></textarea>
+                <br>
+                <br>
+                <input type="submit" class="submit-button">
+            </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer id="footer">
+            <p><a href="contact.html" class="footer-link" tabindex="23">Contact me!</a> | Email: <a class="footer-link" href="mailto:patrickhoey2024@u.northwestern.edu" tabindex="24">patrickhoey2024@u.northwestern.edu</a> | <span tabindex="25">Phone: (650) 350-8804</span></p>
+        </footer>
+    </div>
+  </body>
+</html>

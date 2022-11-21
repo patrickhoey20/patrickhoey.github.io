@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" id="portfoliodescription">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Patrick Hoey</title>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav>
+        <ul role="navigation" id="navbar">
+            <li><a href="index.html" tabindex="1">Home</a></li>
+            <li><a href="bio.html" tabindex="2">Biography</a></li>
+            <li><a href="education.html" tabindex="3">Education</a></li>
+            <li><a href="experience.html" tabindex="4">Experience</a></li>
+            <li><a href="projects.html" tabindex="5">Projects</a></li>
+            <li><a href="index.html#links" tabindex="6">Links and Attachments</a></li> <!--Send you (via smooth scroll) to bottom of the page-->
+        </ul>
+    </nav>
+    <div id="content">
+        <table> <!--Used table here because it makes it easy to add responsiveness (try shrinking the site horizontally)-->
+            <tr>
+                <td>
+                    <h2 tabindex="7">Patrick Hoey</h2>
+                    <p id="bio" tabindex="8">Welcome to my portfolio website!<br><br>
+                        The purpose of this website is to introduce you to my experiences, passions, and motivations. The navigation bar
+                        above will direct you to various sections of the portfolio. In addition, links to my Resume, LinkedIn page, and GitHub page
+                        can be found under the "Links and Attachments" section, which included on this landing page. Finally, my contact information,
+                        as well as a link to a form to contact me directly from this site, can be found in the footer below.<br><br>
+                        If you'd like to learn more about me, <a href="bio.html" tabindex="9">click here to see my full bio!</a>
+                    </p>
+                </td>
+                <td>
+                    <img src="images/portrait1.jpeg" id="portrait" alt="Picture of Patrick Hoey in front of Northwestern's Deering Library" tabindex="10">
+                </td>
+            </tr>
+        </table>
+        <h1 id="links">Links and Attachments</h1>
+        <table>
+            <tr>
+                <td class="button-container">
+                    <a href="Resume - Patrick Hoey.pdf" target="_blank" download tabindex="11"><button class="link-button">Download My Resume</button></a>
+                </td>
+                <td class="button-container">
+                    <a href="https://www.linkedin.com/in/patrickhoey2024/" target="_blank" tabindex="12"><button class="link-button">Go to My LinkedIn Page</button></a>
+                </td>
+                <td class="button-container">
+                    <a href="https://github.com/patrickhoey20" target="_blank" tabindex="13"><button class="link-button">Go to My GitHub Page</button></a>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer id="footer"> <!--Sticky footer-->
+            <p><a href="contact.html" class="footer-link" tabindex="14">Contact me!</a> | Email: <a class="footer-link" href="mailto:patrickhoey2024@u.northwestern.edu" tabindex="15">patrickhoey2024@u.northwestern.edu</a> | <span tabindex="16">Phone: (650) 350-8804</span></p>
+        </footer>
+    </div>
+  </body>
+</html>
