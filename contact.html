@@ -19,6 +19,8 @@
     </nav>
     <div id="content">
         <h1 class="section-heading" tabindex="7">Contact me!</h1>
+            <!--Source: https://www.youtube.com/watch?v=r4RQ38EoLds and https://formsubmit.co/-->
+            <!--On submit, I recieve an email with the data inputted into the form by the user-->
             <form action="https://formsubmit.co/patrickhoey2024@u.northwestern.edu" method="POST">
                 <label for="name">Name</label>
                 <br>
@@ -54,6 +56,7 @@
                 <textarea type="text" id="message" name="message" class="text-area" placeholder="Write your message here" rows="4"></textarea>
                 <br>
                 <br>
+                <input type="hidden" name="_next" value="formsubmitted.html">
                 <input type="submit" class="submit-button">
             </form>
         <br>
