@@ -7,18 +7,18 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <nav>
+    <nav role="navigation">
         <ul role="navigation" id="navbar">
             <li><a href="index.html" tabindex="1">Home</a></li>
-            <li><a href="bio.html" tabindex="2">Biography</a></li>
-            <li><a href="education.html" tabindex="3">Education</a></li>
-            <li><a href="experience.html" tabindex="4">Experience</a></li>
-            <li><a href="projects.html" tabindex="5">Projects</a></li>
+            <li><a href="index.html#projects" tabindex="2">Projects</a></li>
+            <li><a href="bio.html" tabindex="3">Biography</a></li>
+            <li><a href="education.html" tabindex="4">Education</a></li>
+            <li><a href="experience.html" tabindex="5">Experience</a></li>
             <li><a href="index.html#links" tabindex="6">Links and Attachments</a></li> <!--Send you (via smooth scroll) to bottom of the page-->
         </ul>
     </nav>
     <div id="content">
-        <table> <!--Used table here because it makes it easy to add responsiveness (try shrinking the site horizontally)-->
+        <table> <!--Used table here (and on all pages) because it makes it easy to add responsiveness (try shrinking the site horizontally)-->
             <tr>
                 <td>
                     <h2 tabindex="7">Patrick Hoey</h2>
@@ -27,25 +27,90 @@
                         above will direct you to various sections of the portfolio. In addition, links to my Resume, LinkedIn page, and GitHub page
                         can be found under the "Links and Attachments" section, which included on this landing page. Finally, my contact information,
                         as well as a link to a form to contact me directly from this site, can be found in the footer below.<br><br>
-                        If you'd like to learn more about me, <a href="bio.html" tabindex="9">click here to see my full bio!</a>
+                        If you'd like to learn more about me, <a href="bio.html" tabindex="9">click here to see my full bio</a>, or see some of the
+                        <a href="index.html#projects" tabindex="10">projects I've worked on!</a>
                     </p>
                 </td>
                 <td>
-                    <img src="images/portrait1.jpeg" id="portrait" alt="Picture of Patrick Hoey in front of Northwestern's Deering Library" tabindex="10">
+                    <img src="images/portrait1.jpeg" id="portrait" alt="Picture of Patrick Hoey in front of Northwestern's Deering Library" tabindex="11">
                 </td>
             </tr>
         </table>
+        <p id="projects"></p>
+        <h1 class="section-heading" tabindex="12">Projects</h1>
+        <table>
+            <tr>
+                <td class="desc">
+                    <h3 tabindex="13"><u>Associated Student Government (ASG) at Northwestern</u></h3>
+                    <h4 tabindex="14">Executive Officer of Technology, 2022-2023 Cabinet</h4>
+                    <p tabindex="15">Responsibilites: Independently developing The ASG Personnel Accountability Trackr and ASG Pivot</p>
+                    <button class="collapsible" tabindex="16">Read More</button>
+                    <div class="hidden-info" tabindex="17">
+                        <p>
+                            - Currently developing <a href="https://github.com/patrickhoey20/asg-pat" target="_blank" tabindex="18">The Personnel Accessibility Tracker (The PAT)</a>: allows ASG's Head of Accountability
+                            to log weekly progress of ASG Exec members, search data by person, analyze government-wide metrics, and record important notes to keep track of over time<br>
+                            - Currently developing ASG Pivot, a means for Northwestern administrators and students to view and interact with survey data
+                            that ASG has collected over the last ten years. The goals of this project are to 1) increase transparency between students and
+                            their government, and 2) give students the data required to hold their representatives accountable.
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <img src="images/asg_logo.png" class="logo" alt="Northwestern Associated Student Government (ASG) Logo" tabindex="19">
+                </td>
+            </tr>
+            <tr>
+                <td class="desc">
+                    <h3 tabindex="20"><u>Design and Innovate for Social Change (DISC) at Northwestern</u></h3>
+                    <h4 tabindex="21">Software Engineering Volunteer & Club Member</h4>
+                    <p tabindex="22">Responsibilites: Building intake forms for homeless shelter's online case management system</p>
+                    <button class="collapsible" tabindex="23">Read More</button>
+                    <div class="hidden-info" tabindex="24">
+                        <p>
+                            - Building online case management system for Good News Partners (Chicago homeless shelter) with a team of 6 students<br>
+                            - My work so far: built intake forms (using React and Semantic UI), designed DB tables (using MySQL) for intake forms
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <img src="images/disc_logo.png" class="logo" alt="Northwestern Design and Innovate for Social Change (DISC) Logo" tabindex="25">
+                </td>
+            </tr>
+            <tr>
+                <td class="desc">
+                    <h3 tabindex="26"><u>Major League Baseball Hall of Fame Predictive Model</u></h3>
+                    <h4 tabindex="27">Foundations of Data Sciencce (DATA_ENG 200) Final Project</h4>
+                    <p tabindex="28">Responsibilites: Worked with partner to run predictive machine learning model on 22,000+ players in the history of Major League Baseball</p>
+                    <button class="collapsible" tabindex="29">Read More</button>
+                    <div class="hidden-info" tabindex="30">
+                        <p>
+                            - Built and ran <a href="https://github.com/patrickhoey20/dsefinalproject" target="_blank" tabindex="31">logistic regression model</a> on statistics of over 22,000 players in the history of Major
+                            League Baseball to predict which active players are most likely to be inducted into the Hall of Fame<br>
+                        </p>
+                        <p>
+                            Final Presentation:<br>
+                        </p>
+                        <iframe width="420" height="315" src="https://www.youtube.com/embed/kAwDLpF2GjA" tabindex="32"></iframe>
+                    </div>
+                </td>
+                <td>
+                    <img src="images/hof_logo.png" class="logo" alt="Major League Baseball (MLB) Hall of Fame Logo" tabindex="33">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
         <h1 id="links">Links and Attachments</h1>
         <table>
             <tr>
                 <td class="button-container">
-                    <a href="Resume - Patrick Hoey.pdf" target="_blank" download tabindex="11"><button class="link-button">Download My Resume</button></a>
+                    <a href="Resume - Patrick Hoey.pdf" target="_blank" download tabindex="34"><button class="link-button">Download My Resume</button></a>
                 </td>
                 <td class="button-container">
-                    <a href="https://www.linkedin.com/in/patrickhoey2024/" target="_blank" tabindex="12"><button class="link-button">Go to My LinkedIn Page</button></a>
+                    <a href="https://www.linkedin.com/in/patrickhoey2024/" target="_blank" tabindex="35"><button class="link-button">Go to My LinkedIn Page</button></a>
                 </td>
                 <td class="button-container">
-                    <a href="https://github.com/patrickhoey20" target="_blank" tabindex="13"><button class="link-button">Go to My GitHub Page</button></a>
+                    <a href="https://github.com/patrickhoey20" target="_blank" tabindex="36"><button class="link-button">Go to My GitHub Page</button></a>
                 </td>
             </tr>
         </table>
@@ -54,7 +119,7 @@
         <br>
         <br>
         <footer id="footer"> <!--Sticky footer-->
-            <p><a href="contact.html" class="footer-link" tabindex="14">Contact me!</a> | Email: <a class="footer-link" href="mailto:patrickhoey2024@u.northwestern.edu" tabindex="15">patrickhoey2024@u.northwestern.edu</a> | <span tabindex="16">Phone: (650) 350-8804</span></p>
+            <p><a href="contact.html" class="footer-link" tabindex="37">Contact me!</a> | Email: <a class="footer-link" href="mailto:patrickhoey2024@u.northwestern.edu" tabindex="38">patrickhoey2024@u.northwestern.edu</a> | <span tabindex="39">Phone: (650) 350-8804</span></p>
         </footer>
     </div>
   </body>

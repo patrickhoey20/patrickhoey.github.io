@@ -7,16 +7,16 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <nav>
-        <ul role="navigation" id="navbar">
-            <li><a href="index.html" tabindex="1">Home</a></li>
-            <li><a href="bio.html" tabindex="2">Biography</a></li>
-            <li><a href="education.html" tabindex="3">Education</a></li>
-            <li><a href="experience.html" tabindex="4">Experience</a></li>
-            <li><a href="projects.html" tabindex="5">Projects</a></li>
-            <li><a href="index.html#links" tabindex="6">Links and Attachments</a></li> <!--Send you (via smooth scroll) to bottom of the page-->
-        </ul>
-    </nav>
+    <nav role="navigation">
+      <ul role="navigation" id="navbar">
+          <li><a href="index.html" tabindex="1">Home</a></li>
+          <li><a href="index.html#projects" tabindex="2">Projects</a></li>
+          <li><a href="bio.html" tabindex="3">Biography</a></li>
+          <li><a href="education.html" tabindex="4">Education</a></li>
+          <li><a href="experience.html" tabindex="5">Experience</a></li>
+          <li><a href="index.html#links" tabindex="6">Links and Attachments</a></li> <!--Send you (via smooth scroll) to bottom of the page-->
+      </ul>
+  </nav>
     <div id="content">
         <h1 class="section-heading" tabindex="7">Contact me!</h1>
             <!--Source: https://www.youtube.com/watch?v=r4RQ38EoLds and https://formsubmit.co/-->
@@ -40,7 +40,7 @@
                 <br>
                 <!--Source for yes/no radio fieldset: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio-->
                 <fieldset class="fieldset">
-                    <legend for="northwestern">Are you affiliated with Northwestern University?</legend>
+                    <legend>Are you affiliated with Northwestern University?</legend>
                     <div>
                       <input type="radio" name="northwestern" required>
                       <label for="northwestern">Yes</label>
@@ -57,7 +57,7 @@
                 <br>
                 <br>
                 <input type="hidden" name="_next" value="https://patrickhoey20.github.io/formsubmitted.html">
-                <input type="submit" class="submit-button">
+                <input type="submit" class="submit-button" value="Submit">
             </form>
         <br>
         <br>
