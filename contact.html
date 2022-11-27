@@ -22,49 +22,49 @@
             <!--Source: https://www.youtube.com/watch?v=r4RQ38EoLds and https://formsubmit.co/-->
             <!--On submit, I recieve an email with the data inputted into the form by the user-->
             <form action="https://formsubmit.co/patrickhoey2024@u.northwestern.edu" method="POST">
-                <label for="name">Name</label>
+                <label for="name" tabindex="8">Name</label>
                 <br>
-                <input type="text" id="name" name="name" class="form-field" placeholder="Enter your name" required>
-                <br>
-                <br>
-                <label for="email">Email</label>
-                <br>
-                <input type="email" id="email" name="email" class="form-field" placeholder="Enter your email" required> <!--Validates email (must include @) using type="email"-->
+                <input type="text" id="name" name="name" class="form-field" placeholder="Enter your name" required tabindex="9">
                 <br>
                 <br>
-                <label for="phone-num">Phone Number (format: 123-456-7890)</label>
+                <label for="email" tabindex="10">Email</label>
+                <br>
+                <input type="email" id="email" name="email" class="form-field" placeholder="Enter your email" required tabindex="11"> <!--Validates email (must include @) using type="email"-->
+                <br>
+                <br>
+                <label for="phone-num" tabindex="12">Phone Number (format: 123-456-7890)</label>
                 <br>
                 <!--Source for phone number validation: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel-->
-                <input type="tel" id="phone-num" name="phone-num" class="form-field" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!--Validates phone number using pattern-->
+                <input type="tel" id="phone-num" name="phone-num" class="form-field" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" tabindex="13"> <!--Validates phone number using pattern-->
                 <br>
                 <br>
                 <!--Source for yes/no radio fieldset: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio-->
                 <fieldset class="fieldset">
-                    <legend>Are you affiliated with Northwestern University?</legend>
+                    <legend tabindex="14">Are you affiliated with Northwestern University?</legend>
                     <div>
-                      <input type="radio" name="northwestern" required>
-                      <label for="northwestern">Yes</label>
+                      <input type="radio" name="northwestern" required tabindex="16">
+                      <label for="northwestern" tabindex="15">Yes</label>
                     </div>
                     <div>
-                        <input type="radio" name="northwestern">
-                        <label for="northwestern">No</label>
+                        <input type="radio" name="northwestern" tabindex="18">
+                        <label for="northwestern" tabindex="17">No</label>
                       </div>
                 </fieldset>
                 <br>
-                <label for="message">Message</label>
+                <label for="message" tabindex="19">Message</label>
                 <br>
-                <textarea type="text" id="message" name="message" class="text-area" placeholder="Write your message here" rows="4"></textarea>
+                <textarea type="text" id="message" name="message" class="text-area" placeholder="Write your message here" rows="4" tabindex="20"></textarea>
                 <br>
                 <br>
                 <input type="hidden" name="_next" value="https://patrickhoey20.github.io/formsubmitted.html">
-                <input type="submit" class="submit-button" value="Submit">
+                <input type="submit" class="submit-button" value="Submit" tabindex="21">
             </form>
         <br>
         <br>
         <br>
         <br>
         <footer id="footer">
-            <p><a href="contact.html" class="footer-link" tabindex="23">Contact me!</a> | Email: <a class="footer-link" href="mailto:patrickhoey2024@u.northwestern.edu" tabindex="24">patrickhoey2024@u.northwestern.edu</a> | <span tabindex="25">Phone: (650) 350-8804</span></p>
+            <p><a href="contact.html" class="footer-link" tabindex="22">Contact me!</a> | Email: <a class="footer-link" href="mailto:patrickhoey2024@u.northwestern.edu" tabindex="23">patrickhoey2024@u.northwestern.edu</a> | <span tabindex="24">Phone: (650) 350-8804</span></p>
         </footer>
     </div>
   </body>
