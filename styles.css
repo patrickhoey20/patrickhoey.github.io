@@ -27,8 +27,11 @@ body {
     padding: 14px 20px;
     text-decoration: none;
 }
-#navbar li a:hover {
+#navbar li a:hover:not(.active) {
     background-color: #4E2A84;
+}
+.active {
+    background-color: #9853ff;
 }
 #content {
     margin-top: 70px; /* Due to the height of the navabr, need to bring all content down 70px */
@@ -130,4 +133,4 @@ table {
     font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
- }
+}
