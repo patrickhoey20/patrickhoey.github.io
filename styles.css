@@ -30,6 +30,7 @@ body {
 #navbar li a:hover:not(.active) {
     background-color: #4E2A84;
 }
+/* Only using HTML/CSS for active tab in navbar, no JS */
 .active {
     background-color: #9853ff;
 }

@@ -14,3 +14,5 @@ window.onload = function () {
     });
     }
 }
+
+// Used HTML/CSS for active tab of navbar, no JS
